@@ -1,0 +1,391 @@
+$oswald: 'Oswald', sans-serif;
+$lato: 'Lato',sans-serif;
+$lightgrey: #e5e5e5;
+$orange: #F57E57;
+$fontSize: 12px;
+$midAqua: #18afd3;
+$black: #434445;
+
+header {
+    height: 345px;
+    background: url("../img_middle/mainBg.jpg") center no-repeat;
+
+    .container {
+        padding: 0;
+        padding-top: 10px;
+        h1 {
+            font-family: $oswald;
+            color: white;
+            line-height: 1.25;
+            font-size: 80px;
+            letter-spacing: 0.04em;
+            padding-top: 100px;
+        }
+
+        ul {
+            padding: 63px 0 0;
+            font-size: 15px;
+
+            li {
+                display: inline-block;
+                list-style: none;
+                color: white;
+                margin-left: 15px;
+
+                &:first-child {
+                    margin-left: 0;
+                }
+
+                &:last-child {
+                    a {
+                        &:hover {
+                            text-decoration: none;
+                            cursor: text;
+                        }
+                    }
+                }
+
+                a {
+                    color: white;
+                    font-family: $lato;
+                }
+
+                i {
+                    opacity: 0.4;
+                    font-size: 14px;
+                    margin-left: 1.2px;
+                }
+            }
+        }
+    }
+}
+
+section {
+    .container {
+        padding: 0;
+        .login {
+            margin-top: 100px;
+            padding-top: 10px;
+            .row{
+                .col-lg-5 {
+                    padding: 0;
+
+                    h5 {
+                        line-height: 1.33333;
+                        font-size: 18px;
+                        font-family: $oswald;
+                        color: $black;
+                        text-transform: uppercase;
+                        letter-spacing: 0.06em;
+                        margin-bottom: 9px;
+                    }
+
+                    .greyLine {
+                        background: $lightgrey;
+                        height: 1px;
+                        position: relative;
+                        z-index: 0;
+                        .orangeLine {
+                            position: absolute;
+                            background-color: $orange;
+                            height: 1px;
+                            width: 50px;
+                            left: 0;
+                            top: 0;
+                        }
+                    }
+
+                    form {
+                        .input {
+                            margin-top: 32px;
+                            &:last-child{
+                                margin-top: 18px;
+                            }
+                            p {
+                                color: #868686;
+                                font-size: 14px;
+                                margin-bottom: 7px;
+                                font-family: $lato;
+                            }
+
+                            input {
+                                border-radius: 5px;
+                                line-height: 24px;
+                                font-size: 14px;
+                                height: 46px;
+                                padding: 9px 16px;
+                                color: #212121;
+                                background-color: transparent;
+                                border: 1px solid #bdbdbd;
+                                font-family: $lato;
+                                outline: none;
+                                width: 100%;
+                            }
+                        }
+                    }
+
+                    .signIn {
+                        display: flex;
+                        align-items: center;
+                        margin-top: 20px;
+
+                        .buttonType {
+                            display: flex;
+                            margin: 0;
+                            p {
+                                font-family: $oswald;
+                                font-size: $fontSize +4px;
+                                font-weight: 400;
+                                letter-spacing: 0.5px;
+                                text-transform: uppercase;
+                                background: $orange;
+                                border-radius: 23px;
+                                color: white;
+                                padding: 10.5px 37.5px;
+                                transition: all 0.2s ease-out;
+                                cursor: pointer;
+                                margin-left: 0;
+                                &:hover {
+                                    background: $midAqua;
+                                }
+                            }
+                        }
+
+                        p {
+                            margin: 0;
+                            font-family: $lato;
+                            font-size: 15px;
+                            line-height: 1.6;
+                            color: #868686;
+                            margin-left: 20px;
+                        }
+
+                        ul {
+                            padding: 0;
+                            margin: 0;
+                            margin-left: 10px;
+                            li {
+                                display: inline-block;
+                                list-style: none;
+                                background: #e5e5e5;
+                                border-radius: 50%;
+                                width: 40px;
+                                height: 40px;
+                                text-align: center;
+                                 margin-left: 10px;
+                                i {
+                                    line-height: 40px;
+                                    font-size: 18px;
+                                    color: #868686;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .contact{
+            margin-top: 100px;
+            padding-top: 30px;
+            .row{
+                .col-lg-8 {
+                    padding: 0;
+
+                    h5 {
+                        line-height: 1.33333;
+                        font-size: 18px;
+                        font-family: $oswald;
+                        color: $black;
+                        text-transform: uppercase;
+                        letter-spacing: 0.06em;
+                        margin-bottom: 9px;
+                    }
+
+                    .greyLine {
+                        background: $lightgrey;
+                        height: 1px;
+                        position: relative;
+                        z-index: 0;
+
+                        .orangeLine {
+                            position: absolute;
+                            background-color: $orange;
+                            height: 1px;
+                            width: 50px;
+                            left: 0;
+                            top: 0;
+                        }
+                    }
+
+                    form {
+                        .row{
+                            margin-top: 7px;
+                            .input {
+                                p {
+                                    color: #868686;
+                                    font-size: 14px;
+                                    margin-top: 25px;
+                                    margin-bottom: 6px;
+                                    font-family: $lato;
+                                }
+
+                                input {
+                                    border-radius: 5px;
+                                    line-height: 24px;
+                                    font-size: 14px;
+                                    height: 46px;
+                                    padding: 9px 16px;
+                                    color: #212121;
+                                    background-color: transparent;
+                                    border: 1px solid #bdbdbd;
+                                    font-family: $lato;
+                                    outline: none;
+                                    width: 100%;
+                                }
+                            }
+                        }
+                        p {
+                            color: #868686;
+                            font-size: 14px;
+                            margin-top: 25px;
+                            margin-bottom: 6px;
+                            font-family: $lato;
+                        }
+                        textarea{
+                            border-radius: 5px;
+                            outline: none;
+                            height: 170px;
+                            resize: vertical;
+                            line-height: 24px;
+                            font-size: 14px;
+                            width: 100%;
+                            padding: 9px 16px;
+                            color: #212121;
+                            background-color: transparent;
+                            border: 1px solid #bdbdbd;
+                        }
+                    }
+
+                    .signIn {
+                        display: flex;
+                        align-items: center;
+                        margin-top: 25px;
+
+                        .buttonType {
+                            display: flex;
+                            margin: 0;
+                            p {
+                                font-family: $oswald;
+                                font-size: $fontSize +4px;
+                                font-weight: 400;
+                                letter-spacing: 0.5px;
+                                text-transform: uppercase;
+                                background: $orange;
+                                border-radius: 23px;
+                                color: white;
+                                padding: 11px 35px;
+                                transition: all 0.2s ease-out;
+                                cursor: pointer;
+                                margin-left: 0;
+                                margin-bottom: 0px;
+                                &:hover {
+                                    background: $midAqua;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .newsletter{
+            margin-top: 100px;
+            padding-top: 30px;
+            margin-bottom: 100px;
+            padding-bottom: 10px;
+            .row{
+                .col-lg-6 {
+                    padding: 0;
+
+                    h5 {
+                        line-height: 1.33333;
+                        font-size: 18px;
+                        font-family: $oswald;
+                        color: $black;
+                        text-transform: uppercase;
+                        letter-spacing: 0.06em;
+                        margin-bottom: 9px;
+                    }
+
+                    .greyLine {
+                        background: $lightgrey;
+                        height: 1px;
+                        position: relative;
+                        z-index: 0;
+
+                        .orangeLine {
+                            position: absolute;
+                            background-color: $orange;
+                            height: 1px;
+                            width: 50px;
+                            left: 0;
+                            top: 0;
+                        }
+                    }
+                    p{
+                        margin-top: 20px;
+                        margin-bottom: 10px;
+                        font-family: $lato;
+                        font-size: 15px;
+                        color: #868686;
+                        line-height: 1.6;
+                    }
+                    .subscribe{
+                        position: relative;
+                        width: 100%;
+                        input{
+                            border-radius: 23px;
+                            color: #212121;
+                            background: white;
+                            width: 100%;
+                            line-height: 24px;
+                            font-size: 14px;
+                            height: 46px;
+                            padding: 9px 16px;
+                            border: 1px solid #bdbdbd;
+                            font-family: $lato;
+                            outline: none;
+                        }
+                        .signIn {
+                            position: absolute;
+                            right: 0;
+                            top: 0;
+                            display: flex;
+                            align-items: center;
+                            .buttonType {
+                                display: flex;
+                                margin: 0;
+                                p {
+                                    font-family: $oswald;
+                                    font-size: $fontSize +4px;
+                                    font-weight: 400;
+                                    letter-spacing: 0.5px;
+                                    text-transform: uppercase;
+                                    background: $orange;
+                                    border-radius: 23px;
+                                    color: white;
+                                    padding: 11px 35px;
+                                    transition: all 0.2s ease-out;
+                                    cursor: pointer;
+                                    margin: 0;
+                                    &:hover {
+                                        background: $midAqua;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

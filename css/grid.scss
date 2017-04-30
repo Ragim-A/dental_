@@ -1,0 +1,113 @@
+$oswald: 'Oswald', sans-serif;
+$lato: 'Lato',sans-serif;
+$lightgrey: #e5e5e5;
+$orange: #F57E57;
+$fontSize: 12px;
+$midAqua: #18afd3;
+$black: #434445;
+
+header {
+    height: 345px;
+    background: url("../img_middle/mainBg.jpg") center no-repeat;
+
+    .container {
+        padding: 10px 0 0;
+
+        h1 {
+            font-family: $oswald;
+            color: white;
+            line-height: 1.25;
+            font-size: 80px;
+            letter-spacing: 0.04em;
+            padding-top: 100px;
+        }
+
+        ul {
+            padding: 63px 0 0;
+            font-size: 15px;
+
+            li {
+                display: inline-block;
+                list-style: none;
+                color: white;
+                margin-left: 15px;
+
+                &:first-child {
+                    margin-left: 0;
+                }
+
+                &:last-child {
+                    a {
+                        &:hover {
+                            text-decoration: none;
+                            cursor: text;
+                        }
+                    }
+                }
+
+                a {
+                    color: white;
+                    font-family: $lato;
+                }
+
+                i {
+                    opacity: 0.4;
+                    font-size: 14px;
+                    margin-left: 1.2px;
+                }
+            }
+        }
+    }
+}
+
+section {
+    .container {
+        padding: 0;
+
+        .boxed {
+            .partName {
+                h3 {
+                    line-height: 1.13043;
+                    font-size: 46px;
+                    letter-spacing: 0.03em;
+                    font-family: $oswald;
+                    text-transform: uppercase;
+                    color: $black;
+                }
+
+                .line {
+                    background: $orange;
+                    margin-left: 2px;
+                    width: 80px;
+                    height: 4px;
+                }
+            }
+
+            .col {
+                margin: 15px 0;
+
+                .content {
+                    padding: 30px;
+                    background: #F1F3F9;
+
+                    h5 {
+                        margin: 0 0 14px;
+                        font-family: $oswald;
+                        font-size: 18px;
+                        line-height: 1.33333;
+                        letter-spacing: 0.06em;
+                        color: $black;
+                    }
+
+                    p {
+                        margin: 0;
+                        font-family: $lato;
+                        color: #868686;
+                        font-size: 15px;
+                        line-height: 1.6;
+                    }
+                }
+            }
+        }
+    }
+}

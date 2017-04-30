@@ -1,0 +1,67 @@
+header {
+  height: 345px;
+  background: url("../img_middle/mainBg.jpg") center no-repeat; }
+  header .container {
+    padding: 10px 0 0; }
+    header .container h1 {
+      font-family: "Oswald", sans-serif;
+      color: white;
+      line-height: 1.25;
+      font-size: 80px;
+      letter-spacing: 0.04em;
+      padding-top: 100px; }
+    header .container ul {
+      padding: 63px 0 0;
+      font-size: 15px; }
+      header .container ul li {
+        display: inline-block;
+        list-style: none;
+        color: white;
+        margin-left: 15px; }
+        header .container ul li:first-child {
+          margin-left: 0; }
+        header .container ul li:last-child a:hover {
+          text-decoration: none;
+          cursor: text; }
+        header .container ul li a {
+          color: white;
+          font-family: "Lato", sans-serif; }
+        header .container ul li i {
+          opacity: 0.4;
+          font-size: 14px;
+          margin-left: 1.2px; }
+
+section .container {
+  padding: 0; }
+  section .container .boxed .partName h3 {
+    line-height: 1.13043;
+    font-size: 46px;
+    letter-spacing: 0.03em;
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+    color: #434445; }
+  section .container .boxed .partName .line {
+    background: #F57E57;
+    margin-left: 2px;
+    width: 80px;
+    height: 4px; }
+  section .container .boxed .col {
+    margin: 15px 0; }
+    section .container .boxed .col .content {
+      padding: 30px;
+      background: #F1F3F9; }
+      section .container .boxed .col .content h5 {
+        margin: 0 0 14px;
+        font-family: "Oswald", sans-serif;
+        font-size: 18px;
+        line-height: 1.33333;
+        letter-spacing: 0.06em;
+        color: #434445; }
+      section .container .boxed .col .content p {
+        margin: 0;
+        font-family: "Lato", sans-serif;
+        color: #868686;
+        font-size: 15px;
+        line-height: 1.6; }
+
+/*# sourceMappingURL=grid.css.map */

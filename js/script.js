@@ -1,7 +1,5 @@
 var nav_start = document.querySelector('.menu_responsive');
-console.log(nav_start);
 var nav_start_width =nav_start.clientWidth;
-console.log(nav_start_width);
 nav_start.style.left=-nav_start_width+"px";
 
 $(window).resize(function(){
@@ -13,7 +11,7 @@ $(window).resize(function(){
 $(window).resize(function(){
 	if ($(window).width() >= 992){
 		$(".menu_responsive").hide();
-	}else {
+	}else{
 		$(".menu_responsive").show();
 	}
 });

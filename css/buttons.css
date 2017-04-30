@@ -1,0 +1,121 @@
+.buttons {
+  display: flex;
+  align-items: center; }
+  .buttons .button {
+    font-family: "Oswald", sans-serif;
+    background: #F57E57;
+    color: white;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-left: 20px; }
+    .buttons .button:hover {
+      background: #18afd3; }
+    .buttons .button:first-child {
+      margin-left: 0; }
+  .buttons .largeButton {
+    border-radius: 29px;
+    padding: 17px 37px;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.06em; }
+  .buttons .defaultButton {
+    border-radius: 23px;
+    padding: 9px 37px;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.04em; }
+  .buttons .smallButton {
+    border-radius: 20px;
+    padding: 10px 18px;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.04em; }
+  .buttons .round {
+    border-radius: 5px;
+    padding: 9px 37px;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.04em; }
+  .buttons .square {
+    padding: 9px 37px;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.04em; }
+  .buttons .iconRL {
+    display: flex;
+    align-items: center; }
+    .buttons .iconRL:first-child i {
+      margin-left: 10px;
+      font-weight: 900; }
+    .buttons .iconRL:last-child i {
+      margin-right: 10px;
+      font-weight: 900; }
+
+header {
+  height: 345px;
+  background: url("../img_middle/mainBg.jpg") center no-repeat; }
+  header .container {
+    padding: 10px 0 0; }
+    header .container h1 {
+      font-family: "Oswald", sans-serif;
+      color: white;
+      line-height: 1.25;
+      font-size: 80px;
+      letter-spacing: 0.04em;
+      padding-top: 100px; }
+    header .container ul {
+      padding: 63px 0 0;
+      font-size: 15px; }
+      header .container ul li {
+        display: inline-block;
+        list-style: none;
+        color: white;
+        margin-left: 15px; }
+        header .container ul li:first-child {
+          margin-left: 0; }
+        header .container ul li:last-child a:hover {
+          text-decoration: none;
+          cursor: text; }
+        header .container ul li a {
+          color: white;
+          font-family: "Lato", sans-serif; }
+        header .container ul li i {
+          opacity: 0.4;
+          font-size: 14px;
+          margin-left: 1.2px; }
+
+section .container {
+  padding: 0; }
+  section .container .row {
+    margin-bottom: 100px; }
+    section .container .row .col-lg-8 {
+      padding: 0; }
+      section .container .row .col-lg-8 h5 {
+        line-height: 1.33333;
+        font-size: 18px;
+        font-family: "Oswald", sans-serif;
+        color: #434445;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        margin-bottom: 9px; }
+      section .container .row .col-lg-8 .greyLine {
+        background: #e5e5e5;
+        height: 1px;
+        position: relative;
+        z-index: 0; }
+        section .container .row .col-lg-8 .greyLine .orangeLine {
+          position: absolute;
+          background-color: #F57E57;
+          height: 1px;
+          width: 50px;
+          left: 0;
+          top: 0; }
+      section .container .row .col-lg-8 .part {
+        margin-top: 100px;
+        padding-top: 10px; }
+      section .container .row .col-lg-8 .shadow .defaultButton {
+        box-shadow: 0 3px 11px 0 rgba(0, 0, 0, 0.15); }
+
+/*# sourceMappingURL=buttons.css.map */

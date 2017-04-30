@@ -1,0 +1,289 @@
+header {
+  height: 345px;
+  background: url("../img_middle/mainBg.jpg") center no-repeat; }
+  header .container {
+    padding: 0;
+    padding-top: 10px; }
+    header .container h1 {
+      font-family: "Oswald", sans-serif;
+      color: white;
+      line-height: 1.25;
+      font-size: 80px;
+      letter-spacing: 0.04em;
+      padding-top: 100px; }
+    header .container ul {
+      padding: 63px 0 0;
+      font-size: 15px; }
+      header .container ul li {
+        display: inline-block;
+        list-style: none;
+        color: white;
+        margin-left: 15px; }
+        header .container ul li:first-child {
+          margin-left: 0; }
+        header .container ul li:last-child a:hover {
+          text-decoration: none;
+          cursor: text; }
+        header .container ul li a {
+          color: white;
+          font-family: "Lato", sans-serif; }
+        header .container ul li i {
+          opacity: 0.4;
+          font-size: 14px;
+          margin-left: 1.2px; }
+
+section .container {
+  padding: 0; }
+  section .container .login {
+    margin-top: 100px;
+    padding-top: 10px; }
+    section .container .login .row .col-lg-5 {
+      padding: 0; }
+      section .container .login .row .col-lg-5 h5 {
+        line-height: 1.33333;
+        font-size: 18px;
+        font-family: "Oswald", sans-serif;
+        color: #434445;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        margin-bottom: 9px; }
+      section .container .login .row .col-lg-5 .greyLine {
+        background: #e5e5e5;
+        height: 1px;
+        position: relative;
+        z-index: 0; }
+        section .container .login .row .col-lg-5 .greyLine .orangeLine {
+          position: absolute;
+          background-color: #F57E57;
+          height: 1px;
+          width: 50px;
+          left: 0;
+          top: 0; }
+      section .container .login .row .col-lg-5 form .input {
+        margin-top: 32px; }
+        section .container .login .row .col-lg-5 form .input:last-child {
+          margin-top: 18px; }
+        section .container .login .row .col-lg-5 form .input p {
+          color: #868686;
+          font-size: 14px;
+          margin-bottom: 7px;
+          font-family: "Lato", sans-serif; }
+        section .container .login .row .col-lg-5 form .input input {
+          border-radius: 5px;
+          line-height: 24px;
+          font-size: 14px;
+          height: 46px;
+          padding: 9px 16px;
+          color: #212121;
+          background-color: transparent;
+          border: 1px solid #bdbdbd;
+          font-family: "Lato", sans-serif;
+          outline: none;
+          width: 100%; }
+      section .container .login .row .col-lg-5 .signIn {
+        display: flex;
+        align-items: center;
+        margin-top: 20px; }
+        section .container .login .row .col-lg-5 .signIn .buttonType {
+          display: flex;
+          margin: 0; }
+          section .container .login .row .col-lg-5 .signIn .buttonType p {
+            font-family: "Oswald", sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            background: #F57E57;
+            border-radius: 23px;
+            color: white;
+            padding: 10.5px 37.5px;
+            transition: all 0.2s ease-out;
+            cursor: pointer;
+            margin-left: 0; }
+            section .container .login .row .col-lg-5 .signIn .buttonType p:hover {
+              background: #18afd3; }
+        section .container .login .row .col-lg-5 .signIn p {
+          margin: 0;
+          font-family: "Lato", sans-serif;
+          font-size: 15px;
+          line-height: 1.6;
+          color: #868686;
+          margin-left: 20px; }
+        section .container .login .row .col-lg-5 .signIn ul {
+          padding: 0;
+          margin: 0;
+          margin-left: 10px; }
+          section .container .login .row .col-lg-5 .signIn ul li {
+            display: inline-block;
+            list-style: none;
+            background: #e5e5e5;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            margin-left: 10px; }
+            section .container .login .row .col-lg-5 .signIn ul li i {
+              line-height: 40px;
+              font-size: 18px;
+              color: #868686; }
+  section .container .contact {
+    margin-top: 100px;
+    padding-top: 30px; }
+    section .container .contact .row .col-lg-8 {
+      padding: 0; }
+      section .container .contact .row .col-lg-8 h5 {
+        line-height: 1.33333;
+        font-size: 18px;
+        font-family: "Oswald", sans-serif;
+        color: #434445;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        margin-bottom: 9px; }
+      section .container .contact .row .col-lg-8 .greyLine {
+        background: #e5e5e5;
+        height: 1px;
+        position: relative;
+        z-index: 0; }
+        section .container .contact .row .col-lg-8 .greyLine .orangeLine {
+          position: absolute;
+          background-color: #F57E57;
+          height: 1px;
+          width: 50px;
+          left: 0;
+          top: 0; }
+      section .container .contact .row .col-lg-8 form .row {
+        margin-top: 7px; }
+        section .container .contact .row .col-lg-8 form .row .input p {
+          color: #868686;
+          font-size: 14px;
+          margin-top: 25px;
+          margin-bottom: 6px;
+          font-family: "Lato", sans-serif; }
+        section .container .contact .row .col-lg-8 form .row .input input {
+          border-radius: 5px;
+          line-height: 24px;
+          font-size: 14px;
+          height: 46px;
+          padding: 9px 16px;
+          color: #212121;
+          background-color: transparent;
+          border: 1px solid #bdbdbd;
+          font-family: "Lato", sans-serif;
+          outline: none;
+          width: 100%; }
+      section .container .contact .row .col-lg-8 form p {
+        color: #868686;
+        font-size: 14px;
+        margin-top: 25px;
+        margin-bottom: 6px;
+        font-family: "Lato", sans-serif; }
+      section .container .contact .row .col-lg-8 form textarea {
+        border-radius: 5px;
+        outline: none;
+        height: 170px;
+        resize: vertical;
+        line-height: 24px;
+        font-size: 14px;
+        width: 100%;
+        padding: 9px 16px;
+        color: #212121;
+        background-color: transparent;
+        border: 1px solid #bdbdbd; }
+      section .container .contact .row .col-lg-8 .signIn {
+        display: flex;
+        align-items: center;
+        margin-top: 25px; }
+        section .container .contact .row .col-lg-8 .signIn .buttonType {
+          display: flex;
+          margin: 0; }
+          section .container .contact .row .col-lg-8 .signIn .buttonType p {
+            font-family: "Oswald", sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            background: #F57E57;
+            border-radius: 23px;
+            color: white;
+            padding: 11px 35px;
+            transition: all 0.2s ease-out;
+            cursor: pointer;
+            margin-left: 0;
+            margin-bottom: 0px; }
+            section .container .contact .row .col-lg-8 .signIn .buttonType p:hover {
+              background: #18afd3; }
+  section .container .newsletter {
+    margin-top: 100px;
+    padding-top: 30px;
+    margin-bottom: 100px;
+    padding-bottom: 10px; }
+    section .container .newsletter .row .col-lg-6 {
+      padding: 0; }
+      section .container .newsletter .row .col-lg-6 h5 {
+        line-height: 1.33333;
+        font-size: 18px;
+        font-family: "Oswald", sans-serif;
+        color: #434445;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        margin-bottom: 9px; }
+      section .container .newsletter .row .col-lg-6 .greyLine {
+        background: #e5e5e5;
+        height: 1px;
+        position: relative;
+        z-index: 0; }
+        section .container .newsletter .row .col-lg-6 .greyLine .orangeLine {
+          position: absolute;
+          background-color: #F57E57;
+          height: 1px;
+          width: 50px;
+          left: 0;
+          top: 0; }
+      section .container .newsletter .row .col-lg-6 p {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        font-family: "Lato", sans-serif;
+        font-size: 15px;
+        color: #868686;
+        line-height: 1.6; }
+      section .container .newsletter .row .col-lg-6 .subscribe {
+        position: relative;
+        width: 100%; }
+        section .container .newsletter .row .col-lg-6 .subscribe input {
+          border-radius: 23px;
+          color: #212121;
+          background: white;
+          width: 100%;
+          line-height: 24px;
+          font-size: 14px;
+          height: 46px;
+          padding: 9px 16px;
+          border: 1px solid #bdbdbd;
+          font-family: "Lato", sans-serif;
+          outline: none; }
+        section .container .newsletter .row .col-lg-6 .subscribe .signIn {
+          position: absolute;
+          right: 0;
+          top: 0;
+          display: flex;
+          align-items: center; }
+          section .container .newsletter .row .col-lg-6 .subscribe .signIn .buttonType {
+            display: flex;
+            margin: 0; }
+            section .container .newsletter .row .col-lg-6 .subscribe .signIn .buttonType p {
+              font-family: "Oswald", sans-serif;
+              font-size: 16px;
+              font-weight: 400;
+              letter-spacing: 0.5px;
+              text-transform: uppercase;
+              background: #F57E57;
+              border-radius: 23px;
+              color: white;
+              padding: 11px 35px;
+              transition: all 0.2s ease-out;
+              cursor: pointer;
+              margin: 0; }
+              section .container .newsletter .row .col-lg-6 .subscribe .signIn .buttonType p:hover {
+                background: #18afd3; }
+
+/*# sourceMappingURL=forms.css.map */
