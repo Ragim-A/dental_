@@ -98,14 +98,14 @@
 										<p></p>
 										<ul>
 											<li>
-												<i class="fa fa-angle-right" aria-hidden="true"></i><a href="typograpy.html">
+												<i class="fa fa-angle-right" aria-hidden="true"></i><a href="typography.html">
 												Typography</a>
 											</li>
-											<li><i class="fa fa-angle-right" aria-hidden="true"></i><a href="#">Forms</a></li>
-											<li><i class="fa fa-angle-right" aria-hidden="true"></i><a href="#">Buttons</a></li>
-											<li><i class="fa fa-angle-right" aria-hidden="true"></i><a href="#">Grid</a></li>
+											<li><i class="fa fa-angle-right" aria-hidden="true"></i><a href="forms.html">Forms</a></li>
+											<li><i class="fa fa-angle-right" aria-hidden="true"></i><a href="buttons.html">Buttons</a></li>
+											<li><i class="fa fa-angle-right" aria-hidden="true"></i><a href="grid.html">Grid</a></li>
 											<li><i class="fa fa-angle-right" aria-hidden="true"></i><a href="#">Tabs & Accordions</a></li>
-											<li><i class="fa fa-angle-right" aria-hidden="true"></i><a href="#">Progress Bars</a></li>
+											<li><i class="fa fa-angle-right" aria-hidden="true"></i><a href="progress_bar.html">Progress Bars</a></li>
 											<li><i class="fa fa-angle-right" aria-hidden="true"></i><a href="#">Icons</a></li>
 											<li><i class="fa fa-angle-right" aria-hidden="true"></i><a href="#">Tables</a></li>
 										</ul>
@@ -143,7 +143,7 @@
 								</div>
 							</div>
 						</li>
-						<li><a href="#">services</a></li>
+						<li><a href="services.html">services</a></li>
 						<li><a href="department.html">departments</a></li>
 						<li><a href="timeTable.html">timetable</a></li>
 						<li class="liGallery">
@@ -182,9 +182,9 @@
 					<i class="fa fa-search" aria-hidden="true"></i>
 				</form>
 				<ul>
-          <li><a href="index.html">HOME</a></li>
-          <li><a href="about.html">ABOUT</a></li>
-          <li><a href="team.html">TEAM</a></li>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">ABOUT</a></li>
+          <li><a href="#">TEAM</a></li>
           <li class="sub_menu"><a href="#">PAGES</a>
             <i class="fa fa-angle-down slide_down" data-val="0" aria-hidden="true"></i>
             <ul class="gallery_sub">
@@ -329,8 +329,8 @@
             </ul>
           </li>
           <li><a href="#">SERVICES</a></li>
-          <li><a href="department.html">DEPARTAMENTS</a></li>
-          <li><a href="timeTable.html">TIMETABLE</a></li>
+          <li><a href="#">DEPARTAMENTS</a></li>
+          <li><a href="#">TIMETABLE</a></li>
           <li class="sub_menu"><a href="#">GALLERY</a>
             <i class="fa fa-angle-down slide_down" data-val="1" aria-hidden="true"></i>
             <ul class="gallery_sub">
@@ -395,7 +395,7 @@
               </li>
             </ul>
           </li>
-          <li><a href="contacts.html">CONTACTS</a></li>
+          <li><a href="#">CONTACTS</a></li>
         </ul>
 			</div>
 		</div>
@@ -405,7 +405,7 @@
 				<ul>
 					<li><a href="#">Home</a></li>
 					<span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
-					<li>About</li>
+					<li>Services</li>
 				</ul>
 			</div>
 		</div>
@@ -421,12 +421,12 @@
                   FILTER
                 </button>
                 <div class="drop dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <a href="#" class="dropdown-item">General Dentistry</a>
-                  <a href="#" class="dropdown-item">Cosmetic Dentistry</a>
-                  <a href="#" class="dropdown-item">Dental Implants</a>
-                  <a href="#" class="dropdown-item">Teeth Whitening</a>
-                  <a href="#" class="dropdown-item">Dental Crowns</a>
-                  <a href="#" class="dropdown-item">Dentures</a>
+                  <a data-value=0 href="#" class="dropdown-item">General Dentistry</a>
+                  <a data-value=1 href="#" class="dropdown-item">Cosmetic Dentistry</a>
+                  <a data-value=2 href="#" class="dropdown-item">Dental Implants</a>
+                  <a data-value=3 href="#" class="dropdown-item">Teeth Whitening</a>
+                  <a data-value=4 href="#" class="dropdown-item">Dental Crowns</a>
+                  <a data-value=5 href="#" class="dropdown-item">Dentures</a>
                 </div>
               </div>
             </li>
@@ -437,22 +437,22 @@
         <div class="col-xl-3">
           <div class="imageHeader">
             <ul>
-              <li><a href="#">GENERAL DENTISTRY</a></li>
-              <li><a href="#">COSMETIC DENTISTRY</a></li>
-              <li><a href="#">DENTAL IMPLANTS</a></li>
-              <li><a href="#">TEETH WHITENING</a></li>
-              <li><a href="#">DENTAL CROWNS</a></li>
-              <li><a href="#">DENTURES</a></li>
+              <li class="active"><a data-value=0 href="#">GENERAL DENTISTRY</a></li>
+              <li><a data-value=1 href="#">COSMETIC DENTISTRY</a></li>
+              <li><a data-value=2 href="#">DENTAL IMPLANTS</a></li>
+              <li><a data-value=3 href="#">TEETH WHITENING</a></li>
+              <li><a data-value=4 href="#">DENTAL CROWNS</a></li>
+              <li><a data-value=5 href="#">DENTURES</a></li>
             </ul>
           </div><a href="#"></a>
         </div>
-        <div class="col-xl-9 photos">
+        <div class="col-xl-9 photos displayOne">
           <h3>GENERAL DENTISTRY</h3>
           <div class="col-xl-12 col-lg-11 col-md-12 col-sm-10  noPadding">
             <img src="images/photos/servic01.jpg">
             <p>Denta-C team of dental assistants and hygienists take even the most routine dental examination very seriously. When patients come to our clinic for their twice-yearly check-up, they receive a thorough examination, including X-rays, oral cancer screening, and periodontal (gum) inspection at no additional charge.</p>
             <p>Once our doctors have fully inspected the patient's teeth, gums, and jaw, one of our caring and knowledgeable dental hygienists will perform a thorough cleaning. and consult with one of our doctors. We are always ready to help you improve your health.</p>
-          </div>
+          </div>  
           <div class="col-xl-12 doctors">
             <h3>TEAM OF DOCTORS</h3>
             <div class="row images">
@@ -484,6 +484,66 @@
               </div>
             </div>
           </div>
+        </div>
+        <div class="col-xl-9 photos hide displayTwo">
+          <h3>COSMETIC DENTISTRY</h3>
+          <div class="col-xl-12 col-lg-11 col-md-12 col-sm-10  noPadding">
+            <img src="images/photos/servic02.jpg">
+            <p>Smile, it's a great thing to do! With the advanced techniques in cosmetic dentistry that are offered at our dental clinic we are sure to provide you with a smile you will be proud of. Our team has helped many of our patients correct gaps, chips, stains and missing teeth with cosmetic procedures. The dentists of Denta-C will be happy to outline your personalized cosmetic dentistry treatment plan and explain all your options.</p>
+            <p>Take the first step towards enhancing your smile and schedule your cosmetic dentistry exam today at 1-800-1234-567</p>
+          </div>  
+          <button href="#" class="btn btn-primary btn-ellipse">MAKE AN APPOINTMENT</button>
+        </div>
+        <div class="col-xl-9 photos hide displayThree">
+          <h3>DENTAL IMPLANTS</h3>
+          <div class="col-xl-12 col-lg-11 col-md-12 col-sm-10  noPadding">
+            <img src="images/photos/servic03.jpg">
+            <p>Dental implants are a permanent solution to missing teeth that are quickly becoming the solution of choice as over traditional dentures. Dental implants feel and look more natural than dentures and can be used to replace one or more of your missing teeth. Our dentists are experienced in dental implant procedures and are here to help..</p>
+            <p>Contact us at 1-800-123-4567 to make an appointment and we'll be happy to assist you in learning how dental implants could be the best choice for your dental health needs.</p>
+          </div>  
+          <button href="#" class="btn btn-primary btn-ellipse">MAKE AN APPOINTMENT</button>
+        </div>
+        <div class="col-xl-9 photos hide displayFour">
+          <h3>TEETH WHITENING</h3>
+          <div class="col-xl-12 col-lg-11 col-md-12 col-sm-10  noPadding">
+            <img src="images/photos/servic04.jpg">
+            <p>Our teeth whitening services are different from those of other clinics in:</p>
+            <ul>
+              <li><i class="fa fa-angle-right" aria-hidden="true"></i>Professional Whitening Systems Usage</li>
+              <li><i class="fa fa-angle-right" aria-hidden="true"></i>Affordable Price</li>
+              <li><i class="fa fa-angle-right" aria-hidden="true"></i>Dedication of our Dentists</li>
+              <li><i class="fa fa-angle-right" aria-hidden="true"></i>Almost no Side Effects</li>
+              <li><i class="fa fa-angle-right" aria-hidden="true"></i>Guaranteed Result</li>
+              <li><i class="fa fa-angle-right" aria-hidden="true"></i>Perfect Smile</li>
+              <li><i class="fa fa-angle-right" aria-hidden="true"></i>Various Whitening Products</li>
+              <li><i class="fa fa-angle-right" aria-hidden="true"></i>Both In-Office and Over-The-Counter Whitening</li>
+              <li><i class="fa fa-angle-right" aria-hidden="true"></i>Long-Lasting Effect</li>
+            </ul>
+          </div>  
+          <button href="#" class="btn btn-primary btn-ellipse">MAKE AN APPOINTMENT</button>
+        </div>
+        <div class="col-xl-9 photos hide displayFive">
+          <h3>DENTAL CROWNS</h3>
+          <div class="col-xl-12 col-lg-11 col-md-12 col-sm-10  noPadding">
+            <img src="images/photos/servic05.jpg">
+            <p>When a tooth has been damaged by a cavity, we will most likely perform a root canal to remove the infected tooth pulp. To restore functionality and appearance, and to seal the tooth from further damage, a dental crown will then be placed over the entire tooth surface.</p>
+          </div>  
+          <button href="#" class="btn btn-primary btn-ellipse">MAKE AN APPOINTMENT</button>
+        </div>
+        <div class="col-xl-9 photos hide displaySix">
+          <h3>DENTURES</h3>
+          <div class="col-xl-12 col-lg-11 col-md-12 col-sm-10  noPadding">
+            <img src="images/photos/servic06.jpg">
+            <p>Dentures are removable false teeth made of acrylic (plastic), nylon or metal. They fit snugly over the gums to replace missing teeth and eliminate potential problems caused by gaps. Gaps left by missing teeth can cause problems with eating and speech, and teeth either side of the gap may grow into the space at an angle. Installing dentures has a lot of advantages, including:</p>
+            <ul>
+              <li><i class="fa fa-angle-right" aria-hidden="true"></i>No dietary restrictions</li>
+              <li><i class="fa fa-angle-right" aria-hidden="true"></i>Health improvement</li>
+              <li><i class="fa fa-angle-right" aria-hidden="true"></i>Cost-effectiveness</li>
+              <li><i class="fa fa-angle-right" aria-hidden="true"></i>Versatility</li>
+              <li><i class="fa fa-angle-right" aria-hidden="true"></i>Aesthetics</li>
+            </ul>
+          </div>  
+          <button href="#" class="btn btn-primary btn-ellipse">MAKE AN APPOINTMENT</button>
         </div>
       </div>
     </div>
@@ -563,7 +623,6 @@
 				</div>
       </footer>
     </div>
-	</div>
 	</section>
 </body>
 <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>

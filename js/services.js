@@ -128,3 +128,68 @@ $(document).ready(function(){
   }
 
 })();
+
+
+
+// SLIDE
+
+$("a").click(function(event){
+        event.preventDefault();
+});
+
+ console.log( $("#slide  .display"));
+
+$("#slide .imageHeader ul li").click(function(){
+  $("#slide .imageHeader ul li").removeClass("active");
+  $(this).addClass("active");
+
+
+})
+
+
+var hide=$(".hide");
+var displayOne = $(".displayOne");
+var displayTwo = $(".displayTwo");
+var displayThree = $(".displayThree");
+var displayFour = $(".displayFour");
+var displayFive = $(".displayFive");
+var displaySix = $(".displaySix");
+
+ var display = [displayOne,displayTwo,displayThree,displayFour,displayFive,displaySix];
+
+var li = $(".imageHeader li a");
+var a=$(".drop  a");
+
+
+var clickValue = 0;
+var disclickValue = 0;
+
+
+
+hide.css("transform","scale(0.7,0.7)").hide();
+
+li.click(function(){
+   clickValue = $(this).attr("data-value")
+
+    if(clickValue != disclickValue){
+
+     display[disclickValue].css("transform","scale(0.7,0.7)").hide();
+      display[clickValue].show().css("transform","scale(1,1)");
+
+    disclickValue = clickValue;
+    }
+})
+
+
+
+a.click(function(){
+   clickValue = $(this).attr("data-value")
+
+    if(clickValue != disclickValue){
+
+     display[disclickValue].css("transform","scale(0.7,0.7)").hide();
+      display[clickValue].show().css("transform","scale(1,1)");
+
+    disclickValue = clickValue;
+    }
+})
