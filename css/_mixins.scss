@@ -1,0 +1,79 @@
+@mixin wrapper {
+  padding-left: calc(#{$a} + #{$b});
+  padding-right: calc(#{$a} + #{$b});
+}
+@mixin button_style {
+  margin-top: 41px;
+  border-radius: 23px;
+  background-color: $color_button;
+  border-color: $color_button;
+  padding: 10px 47px;
+  border: none;
+  font-family: $oswald_font;
+  color: $color_white;
+  font-size: 16px;
+  line-height: 28px;
+  backface-visibility: hidden;
+  cursor: pointer;
+  outline: none;
+}
+@mixin menu_button {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  text-align: center;
+  top: 50px;
+  cursor: pointer;
+  background: $color_white;
+  box-shadow: -1px 2px 5px #868686;
+}
+@mixin i_class {
+  line-height: 50px;
+  font-size: 22px;
+  color: $color_skyblue;
+}
+@mixin a_tag_white {
+  color: $color_white;
+  line-height: 1.6;
+  &:hover{
+    color: $color_white;
+  }
+  &:active{
+    color: $color_white;
+  }
+  &:visited{
+    color: $color_white;
+  }
+}
+@mixin reset {
+  margin: 0;
+  padding: 0;
+}
+@mixin circle_icon {
+  div{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    background: #18afd3;
+    border-radius: 100%;
+    i{
+      line-height: 50px;
+      color: $color_white;
+      font-size: 25px;
+    }
+  }
+}
+@mixin box_text_decor {
+  transform: rotate(-90deg);
+  position: relative;
+  width: 200px;
+  color: $color_white;
+  font-family: $oswald_font;
+  letter-spacing: 0.06em;
+  font-size: 18px;
+}
+@mixin display_none {
+  @media screen and (max-width: $medi_large) {
+    display: none;
+  }
+}

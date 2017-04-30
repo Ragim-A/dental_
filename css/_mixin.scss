@@ -1,0 +1,117 @@
+$backgroundBlue:#18afd3;
+$backgroundOrange:#f57e57;
+$color_white: #fff;
+$color_button: #f57e57;
+$color_skyblue: #18afd3;
+$color_gray: #868686;
+$color_box: #434445;
+$color_lightgray: #F1F3F9;
+$color_black: black;
+$main_font: 'Lato', sans-serif;
+$oswald_font:'Oswald', sans-serif;
+$fontOswald: 'Oswald', sans-serif;
+$fontLato: 'Lato', sans-serif;
+$center:center;
+$medi_large: 1199px;
+$medi_medium: 992px;
+$medi_min: 768px;
+$a: 15px;
+$b: 6%;
+
+@mixin reset {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin button_style {
+  margin-top: 41px;
+  border-radius: 23px;
+  background-color: $color_button;
+  border-color: $color_button;
+  padding: 10px 47px;
+  border: none;
+  font-family: $oswald_font;
+  color: $color_white;
+  font-size: 16px;
+  line-height: 28px;
+  backface-visibility: hidden;
+  cursor: pointer;
+  outline: none;
+}
+
+@mixin h6_style {
+  font-family: $oswald_font;
+  color: $color_white;
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 0.06em;
+}
+
+@mixin circle_icon {
+  div{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    background: #18afd3;
+    border-radius: 100%;
+    i{
+      line-height: 50px;
+      color: $color_white;
+      font-size: 25px;
+    }
+  }
+}
+
+@mixin menu_button {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  text-align: center;
+  top: 50px;
+  cursor: pointer;
+  background: $color_white;
+  box-shadow: -1px 2px 5px #868686;
+}
+
+@mixin display_none {
+  @media screen and (max-width: $medi_large) {
+    display: none;
+  }
+}
+
+@mixin i_class {
+  line-height: 50px;
+  font-size: 22px;
+  color: $color_skyblue;
+}
+
+@mixin properties($width,$background,$fontSize,$color:#fff){
+  width:$width;
+  color:$color;
+  background:$background;
+  font-size: $fontSize;
+}
+
+@mixin wrapper {
+  padding-left: calc(#{$a} + #{$b});
+  padding-right: calc(#{$a} + #{$b});
+}
+
+@mixin flex{
+  display: flex;
+  justify-content: space-around;
+}
+
+@mixin distance($height,$borderRadius,$background){
+  height: $height;
+  border-radius:$borderRadius;
+  background: $background;
+}
+@mixin spanProp{
+  border-radius: 50%;
+  line-height: 55px;
+  font-size: 0px;
+  background: #e5e5e5;
+  padding: 0px 15px;
+  float: left;
+}

@@ -1,0 +1,690 @@
+$oswald: 'Oswald',sans-serif;
+$lato: 'Lato', sans-serif;
+$lightgrey: #F1F3F9;
+$grey: #868686;
+$patientGrey: #bdbdbd;
+$black: #434445;
+$orange: #F57E57;
+$midAqua: #18afd3;
+$fontSize: 12px;
+$borderDot: rgba(24, 175, 211, 0.22);
+
+.dotActive {
+    background-color: $midAqua;
+}
+
+.dottyActive {
+    background: $borderDot;
+}
+
+.wrapper {
+    width: 86.5%;
+    margin: 0 auto;
+    @media only screen and (max-width: 1199px) {
+        width: 79.6%;
+    }
+    @media only screen and (max-width: 888px) {
+        width: 92.3%;
+    }
+}
+
+.liner {
+    display: flex;
+    justify-content: center;
+
+    .line {
+        margin: 28px 0 28px 2px;
+        height: 4px;
+        width: 80px;
+        background-color: $orange;
+        @media only screen and (max-width: 991px) {
+            margin-top: 37px;
+            margin-left: 0;
+        }
+    }
+}
+
+.ourServices {
+    font-family: $oswald;
+    background-color: $lightgrey;
+    color: $black;
+    text-align: center;
+    height: 890px;
+    padding: 47px 0;
+    @media only screen and (max-width: 991px) {
+        height: 1391px;
+    }
+    @media only screen and (max-width: 767px) {
+        height: 1695px;
+        //əks halda 1710px olmalıdı
+    }
+
+    .wrapper {
+        margin: 63px auto;
+        @media only screen and (max-width: 991px) {
+            margin: 71px auto;
+        }
+        @media only screen and (max-width: 767px) {
+            margin: 19px auto;
+        }
+
+        h1 {
+            text-transform: uppercase;
+            font-size: $fontSize+34px;
+            letter-spacing: 1.4px;
+            font-weight: 200;
+            @media only screen and (max-width: 991px) {
+                font-size: $fontSize+32px;
+            }
+            @media only screen and (max-width: 767px) {
+                font-size: 26px;
+            }
+        }
+
+        p {
+            color: #868686;
+            font-family: $lato;
+            font-size: $fontSize+3px;
+            margin: 33px 0;
+        }
+
+        .imageHolder {
+            display: flex;
+            justify-content: center;
+            margin-top: 61px;
+            @media only screen and (max-width: 1199px) {
+                justify-content: center;
+            }
+            @media only screen and (max-width: 991px) {
+                flex-wrap: wrap;
+            }
+
+            .column {
+                position: relative;
+                margin-left: 79px;
+                @media only screen and (max-width:1199px) {
+                    margin-left: 29px;
+                }
+                @media only screen and (max-width: 991px) {
+                    margin-left: 55px;
+                    margin-bottom: 100px;
+                }
+
+                &:first-child {
+                    margin-left: 0;
+                }
+
+                &:nth-child(2) {
+                    @media only screen and (max-width: 767px) {
+                        position: relative;
+                        left: -27px;
+                    }
+                }
+
+                &:last-child {
+                    margin-left: 80px;
+                    @media only screen and (max-width:1199px) {
+                        margin-left: 30px;
+                    }
+                    @media only screen and (max-width: 991px) {
+                        margin-top: 10px;
+                        position: relative;
+                        left: -202px;
+                    }
+                    @media only screen and (max-width: 767px) {
+                        left: -15px;
+                    }
+                }
+
+                img {
+                    border-radius: 5px;
+                    width: 100%;
+                    @media only screen and (max-width: 1199px) {
+                        width: 293.33px;
+                    }
+                    @media only screen and (max-width: 991px) {
+                        width: 320px;
+                        height: 320px;
+                    }
+                }
+
+                .blueText {
+                    cursor: pointer;
+                    position: absolute;
+                    bottom: 18px;
+                    right: -12px;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    background: $midAqua;
+                    border-radius: 5px;
+                    width: 260px;
+                    height: 52px;
+                    @media only screen and (max-width: 991px) {
+                        bottom: -52px;
+                        left: 0;
+                        width: 100%;
+                        border-radius: 0 0 5px 5px;
+                    }
+
+                    i {
+                        transition: all 0.2s ease-out;
+                        font-size: 0;
+                        color: white;
+                        margin-left: 20px;
+                    }
+
+                    .text {
+                        transition: all 0.2s ease;
+                        font-family: $oswald;
+                        text-transform: uppercase;
+                        color: white;
+                        font-size: 18px;
+                        letter-spacing: 1.22px;
+                        font-weight: lighter;
+                        margin-bottom: 33px;
+                        padding: 15px 15px 14px 17px;
+                        margin-left: -20px;
+                    }
+
+                    &:hover {
+                        i {
+                            font-size: 20px;
+                        }
+
+                        .text {
+                            margin-left: -5px;
+                        }
+                        background: $orange;
+                    }
+                }
+            }
+        }
+
+        .buttonType {
+            display: flex;
+            justify-content: center;
+            @media only screen and (max-width: 991px) {
+                margin-top: -45px;
+            }
+
+            p {
+                font-family: $oswald;
+                font-size: $fontSize +4px;
+                font-weight: 400;
+                letter-spacing: 0.5px;
+                text-transform: uppercase;
+                background: $orange;
+                border-radius: 23px;
+                width: 199px;
+                color: white;
+                padding: 11px 35px;
+                margin-top: 70px;
+                transition: all 0.2s ease-out;
+                cursor: pointer;
+
+                &:hover {
+                    background: $midAqua;
+                }
+            }
+        }
+    }
+}
+
+.qualityTestimonials {
+    height: 686px;
+    width: 100%;
+    overflow: hidden;
+    @media only screen and (max-width: 991px) {
+        height: 1030px;
+    }
+    @media only screen and (max-width: 767px) {
+        height: 820px;
+    }
+    @media only screen and (max-width: 467px) {
+        height: 870px;
+    }
+    // @media only screen and (max-width: 767px){
+    //     margin-top: 10%;
+    // }
+    .row {
+        .quality {
+            background: url('../img_middle/qualityBg.jpg') center center no-repeat;
+            background-size: cover;
+            height: 686px;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            @media only screen and (max-width:1199px) {
+                padding-left: 32px;
+                padding-top: 76px;
+            }
+            @media only screen and (max-width: 1168px) {
+                padding-left: 40px;
+            }
+            @media only screen and (max-width: 991px) {
+                height: 463.5px;
+                justify-content: center;
+            }
+            @media only screen and (max-width: 767px) {
+                align-items: flex-start;
+                height: 369px;
+            }
+            @media only screen and (max-width: 467px) {
+                height: 400px;
+            }
+            @media only screen and (max-width: 467px) {
+                height: 420px;
+            }
+
+            .container {
+                padding: 100px 55px 100px 100px;
+                margin-left: 5px;
+                margin-top: 45px;
+                @media only screen and (max-width: 1199px) {
+                    padding-left: 100px;
+                }
+                @media only screen and (max-width: 1168px) {
+                    padding-left: 75px;
+                }
+                @media only screen and (max-width: 1134px) {
+                    padding-left: 60px;
+                }
+                @media only screen and (max-width: 1104px) {
+                    padding-left: 45px;
+                }
+                @media only screen and (max-width: 1074px) {
+                    padding-left: 30px;
+                }
+                @media only screen and (max-width: 1044px) {
+                    padding-left: 15px;
+                }
+                @media only screen and (max-width: 1014px) {
+                    padding-left: 0;
+                }
+                @media only screen and (max-width: 991px) {
+                    width: 480px;
+                    padding: 0;
+                    margin: -90px 0 0;
+                }
+                @media only screen and (max-width: 767px) {
+                    margin-top: 1px;
+                }
+
+                h1 {
+                    font-size: 60px;
+                    line-height: 1.2;
+                    letter-spacing: 1px;
+                    font-family: $oswald;
+                    color: white;
+                    @media only screen and (max-width: 991px) {
+                        font-size: 52px;
+                    }
+                    @media only screen and (max-width: 767px) {
+                        font-size: 32px;
+                    }
+                    @media only screen and (max-width: 489px) {
+                        margin-left: -10px;
+                    }
+                    @media only screen and (max-width: 467px) {
+                        text-align: center;
+                        width: 400px;
+                        margin-left: -30px;
+                    }
+                    @media only screen and (max-width: 385px) {
+                        width: 350px;
+                        margin-left: -10px;
+                    }
+                    @media only screen and (max-width: 372px) {
+                        width: 300px;
+                        margin-left: 10px;
+                    }
+                }
+
+                > p {
+                    font-family: $lato;
+                    color: white;
+                    line-height: 1.6;
+                    font-size: 15px;
+                    margin-top: 33px;
+                    @media only screen and (max-width: 767px) {
+                        text-align: center;
+                        width: 400px;
+                        margin-left: 3%;
+                    }
+                    @media only screen and (max-width: 467px) {
+                        margin-left: 1%;
+                        width: 90%;
+                    }
+                    @media only screen and (max-width: 467px) {
+                        width: 350px;
+                    }
+                    @media only screen and (max-width: 385px) {
+                        width: 340px;
+                        margin-left: -7px;
+                    }
+                    @media only screen and (max-width: 372px) {
+                        width: 320px;
+                        margin-left: -10px;
+                    }
+                }
+
+                .buttonType {
+                    p {
+                        font-family: $oswald;
+                        font-size: $fontSize +4px;
+                        font-weight: 400;
+                        letter-spacing: 0.5px;
+                        text-transform: uppercase;
+                        background: $orange;
+                        border-radius: 23px;
+                        width: 205px;
+                        color: white;
+                        padding: 11px 38px;
+                        margin-top: 25px;
+                        transition: all 0.2s ease-out;
+                        cursor: pointer;
+
+                        &:hover {
+                            background: $midAqua;
+                        }
+                        @media only screen and (max-width: 767px) {
+                            margin: 25px 102.5px;
+                        }
+                        @media only screen and (max-width: 467px) {
+                            margin: 25px 70px;
+                        }
+                        @media only screen and (max-width: 385px) {
+                            margin: 25px 60px;
+                        }
+                        @media only screen and (max-width: 372px) {
+                            margin: 25px 50px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .testimonials {
+            padding: 0;
+            @media only screen and (max-width: 991px) {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            @media only screen and (max-width: 767px) {
+                height: 450px;
+            }
+            @media only screen and (max-width: 400px) {
+                height: 700px;
+            }
+            .container {
+                width: 455px;
+                margin-top: 100px;
+                margin-left: 100px;
+                padding-left: 30px;
+                padding-top: 10px;
+                @media only screen and (max-width: 1199px) {
+                    padding-left: 0;
+                    margin-left: 65px;
+                }
+                @media only screen and (max-width: 991px) {
+                    padding: 0;
+                    margin: 0;
+                    position: relative;
+                    top: 18%;
+                }
+                @media only screen and (max-width: 767px) {
+                    top: 2%;
+                }
+                @media only screen and (max-width: 400px) {
+                    top: -90px;
+                }
+
+                h1 {
+                    letter-spacing: 1.2px;
+                    font-family: $oswald;
+                    color: $black;
+                    font-size: 46px;
+                    @media only screen and (max-width: 991px) {
+                        font-size: 44px;
+                    }
+                    @media only screen and (max-width: 767px) {
+                        font-size: 26px;
+                        text-align: center;
+                    }
+                }
+
+                .liner {
+                    display: flex;
+                    justify-content: flex-start;
+                    @media only screen and (max-width: 767px) {
+                        justify-content: center;
+                    }
+
+                    .line {
+                        margin: 28px 0;
+                        height: 4px;
+                        width: 80px;
+                        background-color: $orange;
+                        @media only screen and (max-width: 991px) {
+                            margin: 35px 0;
+                        }
+                    }
+                }
+
+                .slideHolder {
+                    overflow: hidden;
+                    width: 455px;
+                    height: 215px;
+                    margin-top: 40px;
+                    @media only screen and (max-width: 1199px) {
+                        margin-top: 35px;
+                    }
+                    @media only screen and (max-width: 767px) {
+                        margin-top: 0;
+                    }
+
+                    .slidingContent {
+                        position: relative;
+                        left: 0;
+                        width: 475px * 3;
+                        height: 215px;
+                        @media only screen and (max-width: 472px) {
+                            margin-left: 15px;
+                        }
+                        @media only screen and (max-width: 440px) {
+                            margin-left: 30px;
+                        }
+                        @media only screen and (max-width: 429px) {
+                            margin-left: 40px;
+                        }
+                        @media only screen and (max-width: 400px) {
+                            margin-left: 50px;
+                        }
+                        @media only screen and (max-width: 380px) {
+                            margin-left: 60px;
+                        }
+                        .slide {
+                            width: 415px;
+                            height: 215px;
+                            margin-left: 50px;
+                            @media only screen and (max-width: 991px) {
+                                display: flex;
+                                width: 455px;
+                            }
+                            @media only screen and (max-width: 767px) {
+                                width: 450px;
+                            }
+                            @media only screen and (max-width: 472px) {
+                                width: 430px;
+                            }
+                            @media only screen and (max-width: 440px) {
+                                width: 390px;
+                            }
+                            @media only screen and (max-width: 429px) {
+                                width: 380px;
+                            }
+                            @media only screen and (max-width: 400px) {
+                                width: 350px;
+                            }
+                            @media only screen and (max-width: 380px) {
+                                width: 340px;
+                            }
+                            &:first-child {
+                                margin-left: 0;
+                            }
+
+                            .head {
+                                margin-bottom: 5px;
+                                i {
+                                    line-height: 30px;
+                                    font-size: 30px;
+                                    color: $midAqua;
+                                }
+                            }
+
+                            .main {
+                                @media only screen and (max-width: 991px) {
+                                    margin-left: 20px;
+                                }
+                                .body {
+                                    color: $grey;
+                                    font-family: $lato;
+                                    font-style: italic;
+                                    font-size: 23px;
+                                    line-height: 1.5;
+                                }
+
+                                .foot {
+                                    display: flex;
+                                    justify-content: flex-start;
+                                    margin-top: 15px;
+
+                                    img {
+                                        height: 100%;
+                                        border-radius: 50%;
+                                    }
+
+                                    .patientText {
+                                        font-family: $lato;
+                                        margin-left: 20px;
+
+                                        .name {
+                                            color: $midAqua;
+                                            font-size: 22px;
+                                            font-weight: 600;
+                                            margin-bottom: 5px;
+                                            @media only screen and (max-width: 767px) {
+                                                font-size: 20px;
+                                            }
+                                        }
+
+                                        .patient {
+                                            color: $patientGrey;
+                                            font-style: italic;
+                                            font-size: 15px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .dots {
+                    display: flex;
+                    justify-content: flex-start;
+                    margin-top: 62px;
+                    @media only screen and (max-width: 1199px) {
+                        margin-top: 95px;
+                        margin-left: -3px;
+                    }
+                    @media only screen and (max-width: 991px) {
+                        margin-top: 30px;
+                        justify-content: center;
+                    }
+                    .dotty {
+                        width: 22px;
+                        height: 22px;
+                        border-radius: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-left: 20px;
+                        @media only screen and (max-width: 1199px) {
+                            margin-left: 10px;
+                        }
+                        @media only screen and (max-width: 991px) {
+                            width: 8px;
+                            height: 8px;
+                        }
+                    }
+
+                    .dot {
+                        border-radius: 100%;
+                        width: 12px;
+                        height: 12px;
+                        transition: all 0.2s ease-out;
+                        cursor: pointer;
+                        background-color: #e5e5e5;
+
+                        &:hover {
+                            background: $midAqua;
+                        }
+                        @media only screen and (max-width: 991px) {
+                            width: 8px;
+                            height: 8px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.ourTeam {
+    background-color: $lightgrey;
+    height: 709px;
+
+    .container {
+        width: 86.5%;
+        padding: 100px 0;
+
+        .containerItem {
+            padding: 10px;
+
+            h1 {
+                text-transform: uppercase;
+                font-size: $fontSize+34px;
+                letter-spacing: 1.4px;
+                font-weight: 200;
+                font-family: $oswald;
+                color: $black;
+                text-align: center;
+                @media only screen and (max-width: 991px) {
+                    font-size: $fontSize+32px;
+                }
+            }
+
+            .dots {
+                display: flex;
+                justify-content: flex-start;
+                margin-top: 62px;
+                margin-left: 20px;
+
+                .dot {
+                    border-radius: 100%;
+                    width: 12px;
+                    height: 12px;
+                    margin-left: 28px;
+                    background-color: #e5e5e5;
+
+                    &:first-child {
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+    }
+}
