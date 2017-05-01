@@ -404,7 +404,7 @@ header{
       background: rgba(14, 99, 119, 0.36);
     }
     .slider_right{
-      width: 66%;
+      width: 365px;
       border-radius: 5px;
       background: rgba(25,25,25,0.375);
       margin-top: 60px;
@@ -893,13 +893,13 @@ header{
             border-bottom:4px solid #f57e57;
             margin-top: 35px;
         }
-    }     
+    }
     .gallery{
       margin-top: 60px;
         img{
           width: $width;
         }
-        
+
         .imgHead{
         font-family: $mainFont;
         padding: 20px 23px 60px 0;
@@ -929,7 +929,7 @@ header{
 
               &:first-child{
               border-right:1px solid;
-              
+
               padding-left: 4px;
                 padding-right: 10px;
               }
@@ -962,7 +962,7 @@ header{
               background: #18afd3;
               color: #fff;
               border: 1px solid #18afd3;
-              } 
+              }
             }
         }
         }
@@ -1043,7 +1043,7 @@ header{
 
           &:hover{
             background:#18afd3;
-          }    
+          }
       }
     }
   }
